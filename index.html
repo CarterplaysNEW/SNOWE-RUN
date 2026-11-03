@@ -1214,3 +1214,4 @@ tick(()=>{const n=performance.now(),dt=Math.min(1,(n-hl)/1000);hl=n;
  if(isHost){hostTick(dt);bc()}
  else if(G.phase=='play'&&hostConn&&hostConn.open){const p=G.P[me.id];if(p&&p.a)hostConn.send({t:'p',x:r2(L.x),y:r2(L.y),z:r2(L.z),r:r2(L.rf),fl:L.fl|0,em:L.em|0})}},50);
 </script></body></html>
+
